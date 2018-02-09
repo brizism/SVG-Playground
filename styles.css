@@ -1,0 +1,26 @@
+svg {
+  border: 1px solid black;
+}
+
+svg path {
+  fill: inherit;
+}
+
+.icon {
+  width: 100px;
+  height: 125px;
+}
+
+use.ic-1 {
+  fill: skyblue;
+}
+use.ic-2 {
+  fill: #FDC646;
+}
+use.ic-3 {
+  fill: red;
+}
+.icon-big {
+  width: 300px;
+  height: 325px;
+}
