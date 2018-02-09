@@ -1,6 +1,6 @@
-svg {
+/* svg {
   border: 1px solid black;
-}
+} */
 
 /* force contents of <use> to inherit styles set */
 /* svg path {
@@ -30,6 +30,7 @@ use.ic-3 {
 
 
 
+
 .codrops-1 {
   fill: #4BC0A5;
   color: #A4DFD1;
@@ -42,3 +43,30 @@ use.ic-3 {
   fill: #5F5EC0;
   color: #AEAFDD;
 }
+
+
+
+
+
+
+svg {
+  margin: 1em;
+  width: 300px; 
+  height: 460px;
+}
+#robot-1 {
+  --primary-color: #0099CC;
+  --secondary-color: #FFDF34;
+  --tertiary-color: #333;
+}
+#robot-2 {
+  --primary-color: #E52A39;
+  --secondary-color: #11EBD8;
+  --tertiary-color: #000;
+}
+/*#robot-3 {
+  --primary-color: ;
+  --secondary-color: ;
+  --tertiary-color: ;
+}*/
+
