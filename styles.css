@@ -48,7 +48,7 @@ use.ic-3 {
 
 
 
-
+/* css variables to style contents of <use> without having to force the browser into overriding any presentation attribute values */
 svg {
   margin: 1em;
   width: 300px; 

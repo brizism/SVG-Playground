@@ -8,6 +8,8 @@
   <title>SVG Playground</title>
 </head>
 <body>
+  <!-- The content that gets rendered in the <use> element is of course a copy of the <symbol>'s content. This content of the referenced element is cloned into a document fragment that is "hosted" by <use> in this case, is called a Shadow Host. 
+  The Shadow DOM instead of being part of the main document subtree, nodes in the Shadow DOM belong to a document fragment which is basically just another subtree of nodes which are not as vulnerable to scripts and styles as normal DOM nodes are. This give us the ability to encapsulate and scope styles and scripts when creating modular components.  -->
   <!-- ice cream -->
   <!-- <svg display="none">
     <symbol id="ic">
