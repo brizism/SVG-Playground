@@ -1,0 +1,22 @@
+{
+  "name": "svg-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass text/scss/main.scss text/css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brizism/SVG-Playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brizism/SVG-Playground/issues"
+  },
+  "homepage": "https://github.com/brizism/SVG-Playground#readme",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
