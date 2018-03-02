@@ -17,3 +17,39 @@ $max: length($colors);
     }
   }
 }
+
+
+
+
+.text {
+  fill: url(#p-stars); // this can be set inline on HTML or here in CSS
+  stroke: #551F7A;
+  stroke-width: 3;
+}
+$colors: #551F7A, #BA2799, #D9587A, #FFDD00, #FFF3A1;
+$max: length($colors);
+
+$time: 2s;
+$time-step: $time/$max;
+
+.g-stars polygon {
+  stroke-width: 0;
+  animation: stroke $time infinite;
+
+  @for $item from 1 through $max {
+    &:nth-child(#{$max}n + #{$item}){
+      $color: nth($colors, $item);
+      fill: $color;
+      stroke: $color;
+      animation-delay: -($time-step*$item);
+    }
+  }
+}
+
+/* Change stroke-width within animation */
+
+@keyframes stroke {
+  50% {
+    stroke-width: 10;
+  }
+}

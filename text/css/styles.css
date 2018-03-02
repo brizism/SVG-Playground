@@ -19,3 +19,37 @@ svg {
 
 .g-spots circle:nth-child(5n + 5) {
   fill: #EEF272; }
+
+.text {
+  fill: url(#p-stars);
+  stroke: #551F7A;
+  stroke-width: 3; }
+
+.g-stars polygon {
+  stroke-width: 0;
+  animation: stroke 2s infinite; }
+  .g-stars polygon:nth-child(5n + 1) {
+    fill: #551F7A;
+    stroke: #551F7A;
+    animation-delay: -0.4s; }
+  .g-stars polygon:nth-child(5n + 2) {
+    fill: #BA2799;
+    stroke: #BA2799;
+    animation-delay: -0.8s; }
+  .g-stars polygon:nth-child(5n + 3) {
+    fill: #D9587A;
+    stroke: #D9587A;
+    animation-delay: -1.2s; }
+  .g-stars polygon:nth-child(5n + 4) {
+    fill: #FFDD00;
+    stroke: #FFDD00;
+    animation-delay: -1.6s; }
+  .g-stars polygon:nth-child(5n + 5) {
+    fill: #FFF3A1;
+    stroke: #FFF3A1;
+    animation-delay: -2s; }
+
+/* Change stroke-width within animation */
+@keyframes stroke {
+  50% {
+    stroke-width: 10; } }
