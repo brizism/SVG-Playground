@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>SVG Text</title>
+</head>
+<body>
+  <div class="svg-title">
+    <svg viewBox="0 0 606 390" width="606px" height="390px">
+      <defs>
+
+        <linearGradient id="gr-simple" x1="0" y1="0" x2="100%" y2="100%">
+            <stop stop-color="hsl(50, 100%, 70%)" offset="10%"/>
+            <stop stop-color="hsl(320, 100%, 50%)" offset="90%"/>
+        </linearGradient>
+
+      </defs>
+      <text text-anchor="middle"
+            x="50%"
+            y="50%"
+            dy=".35em"
+            class="text"
+            fill="url(#gr-simple)"
+            >
+        Text
+      </text>
+    </svg>
+  </div>
+</body>
+</html>
