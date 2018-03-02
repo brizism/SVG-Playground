@@ -1,0 +1,21 @@
+svg {
+  width: 100%; }
+
+.text {
+  font-size: 300px;
+  font-family: 'Krona One', sans-serif; }
+
+.g-spots circle:nth-child(5n + 1) {
+  fill: #1D4259; }
+
+.g-spots circle:nth-child(5n + 2) {
+  fill: #0A7373; }
+
+.g-spots circle:nth-child(5n + 3) {
+  fill: #30BF7C; }
+
+.g-spots circle:nth-child(5n + 4) {
+  fill: #BAF266; }
+
+.g-spots circle:nth-child(5n + 5) {
+  fill: #EEF272; }
