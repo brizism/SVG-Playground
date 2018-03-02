@@ -1,0 +1,72 @@
+/* svg {
+  border: 1px solid black;
+} */
+
+/* force contents of <use> to inherit styles set */
+/* svg path {
+  fill: inherit;
+} */
+
+.icon {
+  width: 100px;
+  height: 125px;
+}
+
+use.ic-1 {
+  fill: skyblue;
+}
+use.ic-2 {
+  fill: #FDC646;
+}
+use.ic-3 {
+  fill: red;
+}
+.icon-big {
+  width: 300px;
+  height: 325px;
+}
+
+
+
+
+
+
+.codrops-1 {
+  fill: #4BC0A5;
+  color: #A4DFD1;
+}
+.codrops-2 {
+  fill: #0099CC;
+  color: #7FCBE5;
+}
+.codrops-3 {
+  fill: #5F5EC0;
+  color: #AEAFDD;
+}
+
+
+
+
+
+/* css variables to style contents of <use> without having to force the browser into overriding any presentation attribute values */
+svg {
+  margin: 1em;
+  width: 300px; 
+  height: 460px;
+}
+#robot-1 {
+  --primary-color: #0099CC;
+  --secondary-color: #FFDF34;
+  --tertiary-color: #333;
+}
+#robot-2 {
+  --primary-color: #E52A39;
+  --secondary-color: #11EBD8;
+  --tertiary-color: #000;
+}
+/* #robot-3 {
+  --primary-color: ;
+  --secondary-color: ;
+  --tertiary-color: ;
+} */
+
