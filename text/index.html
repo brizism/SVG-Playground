@@ -54,12 +54,12 @@
         </pattern>
 
         <pattern
-        id="p-stars"
-        width="70"
-        height="70"
-        viewBox="0 0 120 120"
-        patternUnits="userSpaceOnUse"
-        >
+          id="p-stars"
+          width="70"
+          height="70"
+          viewBox="0 0 120 120"
+          patternUnits="userSpaceOnUse"
+          >
           <g class="g-stars">
             <polygon
                       points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549 "
@@ -170,11 +170,10 @@
 
           </g>
 
-</pattern>
-
-
+        </pattern>
+    
       </defs>
-      <text text-anchor="middle"
+      <!-- <text text-anchor="middle"
             x="50%"
             y="50%"
             dy=".35em"
@@ -182,8 +181,38 @@
             fill="url(#p-stars)"
             >
         Text
-      </text>
+      </text> -->
     </svg>
   </div>
+
+
+  <div class="stroke-anime">
+    <svg viewBox="0 0 642 188" width="642" height="188">
+        <!-- Symbol -->
+        <symbol id="s-text">
+          <text text-anchor="middle"
+                x="50%" y="50%" dy=".35em">
+            Text
+          </text>
+        </symbol>  
+      
+        <!-- Duplicate symbols -->
+        <use xlink:href="#s-text" class="text"
+              ></use>
+        <use xlink:href="#s-text" class="text"
+              ></use>
+        <use xlink:href="#s-text" class="text"
+              ></use>
+        <use xlink:href="#s-text" class="text"
+              ></use>
+        <use xlink:href="#s-text" class="text"
+              ></use>
+        
+    </svg>
+  </div>
+  
 </body>
 </html>
+
+
+
