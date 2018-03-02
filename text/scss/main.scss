@@ -6,6 +6,7 @@ svg {
   font-family: 'Krona One', sans-serif;
 }
 
+// Styles for Spots pattern
 $colors: #1D4259, #0A7373, #30BF7C, #BAF266, #EEF272;
 $max: length($colors);
 
@@ -20,11 +21,11 @@ $max: length($colors);
 
 
 
-
+// Styles for Stars pattern
 .text {
   fill: url(#p-stars); // this can be set inline on HTML or here in CSS
   stroke: #551F7A;
-  stroke-width: 3;
+  stroke-width: 8;
 }
 $colors: #551F7A, #BA2799, #D9587A, #FFDD00, #FFF3A1;
 $max: length($colors);
@@ -53,3 +54,46 @@ $time-step: $time/$max;
     stroke-width: 10;
   }
 }
+
+
+
+// Styles for stroke animation
+.stroke-anime {
+  $colors: #F2385A, #F5A503, #E9F1DF, #56D9CD, #3AA1BF;
+  $max: length($colors);
+  $dash: 70;
+  $dash-gap: 10;
+  $dash-space: $dash * ($max - 1) + $dash-gap * $max;
+  $time: 6s;
+  $time-step: $time/$max;
+
+.text {
+  font-size: 150px;
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: $dash $dash-space;
+  stroke-dashoffset: 0;
+  animation: stroke $time infinite linear;
+
+  &:hover {
+    fill: black;
+  }
+
+  @for $item from 1 through $max {
+    &:nth-child(#{$max}n + #{$item}){
+      $color: nth($colors, $item);
+      stroke: $color;
+      animation-delay: -($time-step * $item);
+    }
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -($dash + $dash-gap) * $max;
+  }
+}
+}
+
+

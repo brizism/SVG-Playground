@@ -23,7 +23,7 @@ svg {
 .text {
   fill: url(#p-stars);
   stroke: #551F7A;
-  stroke-width: 3; }
+  stroke-width: 8; }
 
 .g-stars polygon {
   stroke-width: 0;
@@ -53,3 +53,33 @@ svg {
 @keyframes stroke {
   50% {
     stroke-width: 10; } }
+
+.stroke-anime .text {
+  font-size: 150px;
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  animation: stroke 6s infinite linear; }
+  .stroke-anime .text:hover {
+    fill: black; }
+  .stroke-anime .text:nth-child(5n + 1) {
+    stroke: #F2385A;
+    animation-delay: -1.2s; }
+  .stroke-anime .text:nth-child(5n + 2) {
+    stroke: #F5A503;
+    animation-delay: -2.4s; }
+  .stroke-anime .text:nth-child(5n + 3) {
+    stroke: #E9F1DF;
+    animation-delay: -3.6s; }
+  .stroke-anime .text:nth-child(5n + 4) {
+    stroke: #56D9CD;
+    animation-delay: -4.8s; }
+  .stroke-anime .text:nth-child(5n + 5) {
+    stroke: #3AA1BF;
+    animation-delay: -6s; }
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400; } }
