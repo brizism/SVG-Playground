@@ -1,0 +1,19 @@
+svg {
+  width: 100%;
+}
+.text {
+  font-size: 300px;
+  font-family: 'Krona One', sans-serif;
+}
+
+$colors: #1D4259, #0A7373, #30BF7C, #BAF266, #EEF272;
+$max: length($colors);
+
+.g-spots circle {
+
+  @for $item from 1 through $max {
+    &:nth-child(#{$max}n + #{$item}){
+      fill: nth($colors, $item);
+    }
+  }
+}
